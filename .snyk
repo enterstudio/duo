@@ -1,0 +1,46 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.3
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - duo-test > mocha > debug:
+        patched: '2019-04-16T22:42:54.798Z'
+  'npm:hawk:20160119':
+    - duo-test > wd > request > hawk:
+        patched: '2019-04-16T22:42:54.798Z'
+  'npm:hoek:20180212':
+    - duo-test > wd > request > hawk > hoek:
+        patched: '2019-04-16T22:42:54.798Z'
+    - duo-test > wd > request > hawk > boom > hoek:
+        patched: '2019-04-16T22:42:54.798Z'
+    - duo-test > wd > request > hawk > sntp > hoek:
+        patched: '2019-04-16T22:42:54.798Z'
+    - duo-test > wd > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-04-16T22:42:54.798Z'
+  'npm:http-signature:20150122':
+    - duo-test > wd > request > http-signature:
+        patched: '2019-04-16T22:42:54.798Z'
+  'npm:minimatch:20160620':
+    - duo-watch > sane > minimatch:
+        patched: '2019-04-16T22:42:54.798Z'
+    - duo-test > mocha > glob > minimatch:
+        patched: '2019-04-16T22:42:54.798Z'
+    - duo-test > wd > archiver > glob > minimatch:
+        patched: '2019-04-16T22:42:54.798Z'
+    - duo-watch > minimatch:
+        patched: '2019-04-16T22:42:54.798Z'
+  'npm:ms:20151024':
+    - duo-test > co-timeout > ms:
+        patched: '2019-04-16T22:42:54.798Z'
+    - duo-test > mocha > debug > ms:
+        patched: '2019-04-16T22:42:54.798Z'
+  'npm:negotiator:20160616':
+    - duo-test > koa > accepts > negotiator:
+        patched: '2019-04-16T22:42:54.798Z'
+  'npm:request:20160119':
+    - duo-test > wd > request:
+        patched: '2019-04-16T22:42:54.798Z'
+  'npm:tunnel-agent:20170305':
+    - duo-test > wd > request > tunnel-agent:
+        patched: '2019-04-16T22:42:54.798Z'
